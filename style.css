@@ -1,13 +1,15 @@
 body {
   margin: 0 auto;
-  background: rgba(0, 119, 170, 0.6);
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6190e8, #a7bfe8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6190e8, #a7bfe8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0 10% 2% 10%;
   text-align: center;
   font-family: Raleway;
 }
 
 a {
-  color: #0077AA;
+  color: #6190e8;
 }
 
 .content {
@@ -27,8 +29,7 @@ a {
 }
 
 .navbar {
-  background: #0077AA;
-
+  background: #6190e8;
 }
 
 .navbar a {
