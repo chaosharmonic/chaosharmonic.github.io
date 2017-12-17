@@ -20,7 +20,6 @@ a {
 
 #intro {
   margin-top: 0;
-  padding-top: 10px;
 }
 
 #icons {
@@ -28,10 +27,10 @@ a {
   font-size: 30px;
 }
 
-.navbar {
-  background: #6190e8;
+#strike {
+  text-decoration: line-through;
 }
 
-.navbar a {
-  color: #FFFFFF;
+#aboutText {
+  text-align: left;
 }
