@@ -1,0 +1,94 @@
+:root {
+  --accent-color: rgb(0, 75, 225);
+}
+
+@keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+
+body {
+  background: rgb(97, 144, 232);
+  background: linear-gradient(130deg, rgba(11,100,225,0.9) 0%, rgba(9,121,84,0.9) 55%, rgba(0,212,255,0.9) 95%);
+  margin: 0 auto;
+  text-align: center;
+  font-family: Lato;
+  text-shadow: 2px rgba(170, 170, 170, 0.6), 1px 2px 2px 1px rgba(45, 45, 45, 0.45);
+  min-height: 100vh;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 10px;
+  background:rgba(100, 190, 35, 0.3);
+  animation: fadeIn ease-in 500ms;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+img {
+  max-width: 98%;
+  max-height: 98%;
+}
+
+nav {
+  padding: 10px 5vw;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:rgba(100, 190, 35, 0.4);
+}
+
+button {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  color: var(--accent-color);
+  font-size: 16px;
+  border: 2px solid var(--accent-color);
+  margin: 0 3px;
+}
+
+.card {
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.container {
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn ease-in 350ms;
+}
+
+.projects {
+  justify-content: space-around
+}
+
+.icons {
+  margin: 0 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  color: var(--accent-color);
+}
+
+#headShot {
+  width: 300px;
+}
+
+#aboutText {
+  text-align: left;
+  padding: 0 10px;
+  font-size: 30px;
+  max-width: 70%;
+}
