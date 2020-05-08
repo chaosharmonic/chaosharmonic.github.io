@@ -97,6 +97,12 @@ button {
 #aboutText {
   text-align: left;
   padding: 0 10px;
-  font-size: 30px;
+  font-size: 1.9em;
   max-width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
 }
