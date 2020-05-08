@@ -16,7 +16,7 @@ const contactInfo = [
 ]
 
 const constructContactIcon = ({ link, description, icon }) => (
-  <a href={link}><FontAwesomeIcon icon={icon} className='icons' /></a>
+  <a href={link} className='icon'><FontAwesomeIcon icon={icon} /></a>
 )
 const contactIcons = contactInfo.map(link => constructContactIcon(link))
 

@@ -4,9 +4,9 @@ const baseUrl = 'https://chaosharmonic.github.io'
 const projects = [
   { path: 't3', text: 'Tic Tac Toe' },
   { path: 'calc', text: 'Calculator' },
-  { path: 'pomodoro', text: 'Pomodoro Timer' },
   { path: 'simon', text: 'Simon' },
-  { path: 'weather', text: 'Weather' },
+  { path: 'weather', text: 'Local Weather' },
+  { path: 'negotiable', text: 'Negotiable' },
   { path: 'pilgrim', text: 'Pilgrim Ipsum', url: 'https://pilgrimipsum.com/' }
 ]
 
