@@ -53,6 +53,21 @@ nav {
   background:rgb(90, 170, 30);
 }
 
+.header {
+  margin: 0 2vw;
+}
+
+
+.icon {
+  margin: 0 2vw;
+  font-size: 30px;
+  color: var(--accent-color);
+}
+
+.icon :hover {
+  color: rgba(75, 75, 200);
+}
+
 button {
   padding: 12px;
   text-transform: uppercase;
@@ -64,6 +79,18 @@ button {
   margin: 0 3px;
 }
 
+.container {
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn ease-in 350ms;
+}
+
+.projects {
+  justify-content: space-around
+}
+
 .card {
   width: 30%;
   min-width: 350px;
@@ -73,31 +100,7 @@ button {
   background: rgba(180, 180, 180, 0.3);
 }
 
-.container {
-  padding: 5px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  animation: fadeIn ease-in 350ms;
-}
 
-.header {
-  margin: 0 2vw;
-}
-
-.projects {
-  justify-content: space-around
-}
-
-.icon {
-  margin: 0 2vw;
-  font-size: 30px;
-  color: var(--accent-color);
-}
-
-.icon :hover {
-  color: rgba(75, 75, 200);
-}
 
 #headShot {
   width: 25vw;
@@ -116,6 +119,11 @@ button {
   nav {
     flex-direction: column;
   }
+
+  h1 {
+    padding: 0 5vw;
+  }
+
   #aboutText {
     font-size: 1.7em;
   }
