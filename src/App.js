@@ -11,9 +11,11 @@ const App = () => {
     <div className='App'>
       <Header setCurrentView={setCurrentView} />
       <div id='main'>
-        <h1>Hey there! I'm Sean, and I write code.</h1>
-        {currentView === 'about' && <About />}
-        {currentView === 'projects' && <Projects />}
+        <div id='frost'>
+          <h1>Hey there! I'm Sean, and I write code.</h1>
+          {currentView === 'about' && <About />}
+          {currentView === 'projects' && <Projects />}
+        </div>
       </div>
     </div>
   )
