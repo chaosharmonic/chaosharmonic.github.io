@@ -39,7 +39,7 @@ const createColumn = (project) => {
 const columns = projects.map(project => createColumn(project))
 
 const Projects = () => (
-  <Section id='main'>
+  <Section id='main' backgroundColor='black'>
     <Content>
       <Title id='portfolioHeader'>Here's some work I've done:</Title>
     </Content>
