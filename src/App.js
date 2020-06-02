@@ -1,23 +1,27 @@
 import React, { useState } from 'react'
+import 'rbx/index.css'
+import 'bulmaswatch/cyborg/bulmaswatch.min.css'
 import './App.css'
-import About from './components/about.js'
-import Header from './components/header.js'
-import Projects from './components/projects'
+import { Container } from 'rbx'
+import About from './components/About.js'
+import SiteNav from './components/siteNav.js'
+import Projects from './components/Projects'
+import HeroBanner from './components/HeroBanner.js'
 
 const App = () => {
-  const [currentView, setCurrentView] = useState('about')
+  const [currentView, setCurrentView] = useState('home')
 
   return (
-    <div className='App'>
-      <Header setCurrentView={setCurrentView} />
-      <div id='main'>
-        <div id='frost'>
-          <h1>Hey there! I'm Sean, and I write code.</h1>
+    <>
+      {currentView === 'home' && <HeroBanner />}
+      {currentView !== 'home' && (
+        <Container id='App'>
           {currentView === 'about' && <About />}
           {currentView === 'projects' && <Projects />}
-        </div>
-      </div>
-    </div>
+        </Container>
+      )}
+      <SiteNav setCurrentView={setCurrentView} />
+    </>
   )
 }
 

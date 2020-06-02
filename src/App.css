@@ -1,139 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-:root {
-  --accent-color: rgb(50, 50, 200);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
 
+:root {
+  --fade: fadeIn ease-in 500ms;
+}
+
+
 body {
-  background: rgb(97, 144, 232);
-  background: linear-gradient(130deg, rgb(11,100,225) 50%, rgb(9,121,84) 50%);
-  margin: 0 auto;
-  text-align: center;
-  font-family: Lato;
-  text-shadow: 2px rgba(170, 170, 170, 0.6), 1px 2px 2px 1px rgba(45, 45, 45, 0.45);
-  min-height: 100vh;
+  min-height: calc(100vh - 3.25rem);
+}
+
+#hero {
+  background: linear-gradient(170deg, rgb(75, 50, 150) 78vh, black 80vh);
+  padding-left: 5%;
+  animation: var(--fade);
+}
+
+#App {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #main {
-  margin: 0 auto;
   max-width: 85vw;
   border-radius: 10px;
-  background: rgba(0,0,0,0.6);
-  animation: fadeIn ease-in 500ms;
-}
-
-#frost {
-  background:rgba(125, 200, 100, 0.7);
-  border-radius: inherit;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-a {
-  color: var(--accent-color);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-img {
-  max-width: 98%;
-  max-height: 98%;
+  animation: var(--fade);
 }
 
 nav {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background:rgb(90, 170, 30);
-}
-
-.header {
-  margin: 0 2vw;
-}
-
-
-.icon {
-  margin: 0 2vw;
-  font-size: 30px;
-  color: var(--accent-color);
-}
-
-.icon :hover {
-  color: rgba(75, 75, 200);
-}
-
-button {
-  padding: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-  background: rgba(190, 190, 190, 0.45);
-  color: var(--accent-color);
-  font-size: 1.2em;
-  border: 3px solid var(--accent-color);
-  margin: 0 3px;
-}
-
-.container {
-  padding: 5px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  animation: fadeIn ease-in 350ms;
-}
-
-.projects {
-  justify-content: space-around;
+  padding: 0 1.5vw;
 }
 
 .card {
-  width: 30%;
-  min-width: 325px;
-  padding: 10px 5px;
-  margin: 5px 0;
   border-radius: 5px;
-  background: rgba(180, 180, 180, 0.3);
+}
+.card img {
+  padding: 10px;
 }
 
-#headShot {
-  width: 25vw;
-  max-width: 350px;
-  min-width: 200px;
+#profile {
+  width: 50%;
+  max-width: 300px;
 }
 
-#aboutText {
+p {
   text-align: left;
-  padding: 0 10px;
-  font-size: 1.85em;
-  max-width: 85%;
+  font-size: 2rem;
 }
 
-@media only screen and (max-width: 800px) {
-  nav {
-    flex-direction: column;
-  }
-
-  h1 {
-    padding: 0 5vw;
-  }
-
-  #aboutText {
-    font-size: 1.7em;
-  }
+a {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: Montserrat;
 }
 
-@media only screen and (min-width: 1200px) {
-  #headShot {
-    max-width: 325px;
-  }
-  #aboutText {
-    max-width: 65%;
-  }
+button {
+  text-transform: capitalize;
 }
