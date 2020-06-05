@@ -19,7 +19,7 @@ const createColumn = (project) => {
   const asset = `../assets/${path}.png`
 
   return (
-    <Column size={4}>
+    <Column size={6}>
       <Card>
         <Card.Image>
           <a href={link}>

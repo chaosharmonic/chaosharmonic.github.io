@@ -4,7 +4,7 @@ import { Hero, Image, Title } from 'rbx'
 const publicUrl = process.env.PUBLIC_URL
 const profile = `${publicUrl}/assets/profile.jpg`
 
-const HeroBanner = () => (
+const Splash = () => (
   <>
     <Hero
       size='fullheight-with-navbar'
@@ -24,4 +24,4 @@ const HeroBanner = () => (
   </>
 )
 
-export default HeroBanner
+export default Splash

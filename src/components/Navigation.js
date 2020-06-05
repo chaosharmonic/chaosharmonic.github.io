@@ -6,7 +6,7 @@ import { faGithub, faFreeCodeCamp, faCodepen, faLinkedin } from '@fortawesome/fr
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faGithub, faFreeCodeCamp, faCodepen, faLinkedin, faEnvelope)
-const sections = ['home', 'about', 'projects']
+const sections = ['home', 'about', 'projects', 'built with']
 
 const contactInfo = [
   { link: 'https://github.com/chaosharmonic', description: 'Github', icon: faGithub },
@@ -28,7 +28,7 @@ const constructContactIcon = ({ link, description, icon }) => (
 )
 const contactIcons = contactInfo.map(link => constructContactIcon(link))
 
-const siteNav = ({ setCurrentView }) => {
+const Navigation = ({ setCurrentView }) => {
   const handleClick = (event) => {
     setCurrentView(event.target.value)
   }
@@ -60,4 +60,4 @@ const siteNav = ({ setCurrentView }) => {
   )
 }
 
-export default siteNav
+export default Navigation
