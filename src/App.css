@@ -23,9 +23,7 @@ body {
   padding-bottom: 10vh;
 }
 
-#main {
-  max-width: 85vw;
-  border-radius: 10px;
+section {
   animation: var(--fade);
 }
 
@@ -51,6 +49,10 @@ p {
 
 a {
   font-weight: 600;
+}
+
+.card a {
+  font-size: 1.5rem;
 }
 
 button {
