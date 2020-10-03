@@ -3,16 +3,31 @@ import { Card, Image, Column, Content, Section, Title } from 'rbx'
 
 const baseUrl = 'https://chaosharmonic.github.io'
 const projects = [
-  { path: 'negotiable', text: 'Negotiable' },
-  { path: 't3', text: 'Tic Tac Toe' },
-  { path: 'simon', text: 'Simon' },
-  { path: 'calc', text: 'Calculator' },
-  { path: 'weather', text: 'Local Weather' },
-  { path: 'pilgrim', text: 'Pilgrim Ipsum', url: 'https://pilgrimipsum.com/' }
+  {
+    path: 'step-step-recollection',
+    title: 'Step Step Recollection',
+    description: 'A workout tracker for DDR. (Work in progress.) Built using React, Express, and MongoDB.',
+    url: 'https://step-step-recollection.vercel.app/'
+  },
+  {
+    path: 'negotiable',
+    title: 'Negotiable',
+    description: 'A bar chart for boilerplate salaries. Built using Vue and SVG.'
+  },
+  {
+    path: 't3',
+    title: 'Tic Tac Toe',
+    description: 'A simple tic tac toe game. Built using vanilla JS.'
+  },
+  {
+    path: 'calc',
+    title: 'Calculator',
+    description: 'A simple clone of Windows\' calculator. Built using vanilla JS.'
+  }
 ]
 
 const createColumn = (project) => {
-  const { text, url, path } = project
+  const { title, description, url, path } = project
 
   const link = url || `${baseUrl}/${path}`
 
@@ -28,8 +43,9 @@ const createColumn = (project) => {
         </Card.Image>
         <Card.Content>
           <a href={link}>
-            {text}
+            {title}
           </a>
+          <p>{description}</p>
         </Card.Content>
       </Card>
     </Column>
