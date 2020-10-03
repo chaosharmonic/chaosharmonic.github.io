@@ -5,7 +5,7 @@ const projects = [
   {
     path: 'step-step-recollection',
     title: 'Step Step Recollection',
-    description: 'A workout tracker for DDR. (Work in progress.) Built using React, Express, and MongoDB.',
+    description: 'A CRUD application and workout tracker for DDR. (Work in progress.) Built using React, Express, and MongoDB. Seeded using Deno.',
     url: 'https://step-step-recollection.vercel.app/'
   },
   {
