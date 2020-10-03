@@ -11,7 +11,7 @@ const projects = [
   {
     path: 'negotiable',
     title: 'Negotiable',
-    description: 'A bar chart for boilerplate salaries. Built using Vue and SVG.'
+    description: 'A bar chart for comparing boilerplate salaries. Built using Vue and SVG.'
   },
   {
     path: 't3',
