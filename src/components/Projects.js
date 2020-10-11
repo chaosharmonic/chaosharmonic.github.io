@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, Image, Column, Content, Section, Title } from 'rbx'
 
-const baseUrl = 'https://chaosharmonic.github.io'
 const projects = [
   {
     path: 'step-step-recollection',
@@ -22,14 +21,14 @@ const projects = [
   {
     path: 'calc',
     title: 'Calculator',
-    description: 'A simple clone of Windows\' calculator. Built using vanilla JS.'
+    description: 'A simple calculator. Built using vanilla JS.'
   }
 ]
 
 const createColumn = (project) => {
   const { title, description, url, path } = project
 
-  const link = url || `${baseUrl}/${path}`
+  const link = url || `/${path}`
 
   const asset = `../assets/${path}.png`
 
