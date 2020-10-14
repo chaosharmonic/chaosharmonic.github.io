@@ -5,8 +5,7 @@ const projects = [
   {
     path: 'step-step-recollection',
     title: 'Step Step Recollection',
-    description: 'A CRUD application and workout tracker for DDR. (Work in progress.) Built using React, Express, and MongoDB. Seeded using Deno.',
-    url: 'https://step-step-recollection.vercel.app/'
+    description: 'A CRUD application and workout tracker for DDR. (Work in progress.) Built using React, Express, and MongoDB. Seeded using Deno.'
   },
   {
     path: 'negotiable',
@@ -25,10 +24,8 @@ const projects = [
   }
 ]
 
-const createColumn = (project) => {
-  const { title, description, url, path } = project
-
-  const link = url || `/${path}`
+const createColumn = ({ title, description, path }) => {
+  const link = `https://${path}.bhmt.dev/`
 
   const asset = `../assets/${path}.png`
 
