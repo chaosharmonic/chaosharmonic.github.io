@@ -33,6 +33,7 @@ nav {
 
 .card {
   border-radius: 5px;
+  height: 100%;
 }
 .card img {
   padding: 10px;
