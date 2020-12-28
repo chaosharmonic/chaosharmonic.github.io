@@ -2,7 +2,7 @@ import React from 'react'
 import { Hero, Image, Title } from 'rbx'
 
 const publicUrl = process.env.PUBLIC_URL
-const profile = `${publicUrl}/assets/profile.jpg`
+const profile = `${publicUrl}/assets/profile.webp`
 
 const Splash = () => (
   <>

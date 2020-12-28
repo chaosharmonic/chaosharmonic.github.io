@@ -27,7 +27,7 @@ const projects = [
 const createColumn = ({ title, description, path }) => {
   const link = `https://${path}.bhmt.dev/`
 
-  const asset = `../assets/${path}.png`
+  const asset = `../assets/${path}.webp`
 
   return (
     <Column size={6}>
